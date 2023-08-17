@@ -10,13 +10,7 @@ pipeline {
     }
     
     stages {
-        stage('Clonar Repositorio') {
-            steps {
-                // Clona el repositorio que contiene los scripts de la base de datos
-                git 'https://github.com/your/repo.git'
-            }
-        }
-        
+
         stage('Desplegar Base de Datos') {
             steps {
                 script {
