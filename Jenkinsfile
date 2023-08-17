@@ -10,7 +10,6 @@ pipeline {
     }
     
     stages {
-
         stage('Desplegar Base de Datos') {
             steps {
                 script {
@@ -23,6 +22,7 @@ pipeline {
         stage('Realizar Pruebas') {
             steps {
                 // Agrega aquí los pasos para realizar pruebas en la base de datos desplegada
+                // Por ejemplo, ejecutar consultas de verificación, pruebas de integridad, etc.
             }
         }
     }
